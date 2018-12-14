@@ -1,0 +1,13 @@
+
+<form method="get" action="{% url 'detail' %}">
+	{% csrf_token %}
+	<label>longitude</label>
+	<input type="text" id="longitude" name="longitude">
+	<label>latitude</label>
+	<input type="text" id="latitude" name="latitude">
+	<input type="submit" name="done" id="done">
+
+</form>
+
+<h1>{{ location }}</h1>
+
